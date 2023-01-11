@@ -1,0 +1,467 @@
+/* 
+font-family: 'Montserrat', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    letter-spacing: .04rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    font-kerning: auto;
+}
+
+body {
+    position: relative;
+    background-color: rgb(242, 242, 242);
+    color: rgb(115, 115, 115);
+    font-weight: 200;
+    font-size: 1.1rem;
+    transition: .5s;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a, button{
+    font-variant-caps: all-small-caps;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color:rgba(95, 137, 236, 0.74);
+}
+
+.backToTop button {
+    opacity: .6;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0px 60px;
+    border: 2px solid;
+}
+
+/* spinner - start*/
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .7;
+    background-color: rgba(41, 41, 41, 0.492);
+    z-index: 100000;
+    display: none;
+}
+
+.loadingBg {
+    z-index: 9999;
+}
+
+.spinner-grow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: transparent;
+    border: 3px solid rgb(59, 106, 214);
+    width: 60px;
+    height: 60px;
+}
+
+
+/* spinner - end */
+a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+}
+
+a:hover {
+    color: rgba(59, 105, 214, 0.786);
+    transition: .3s;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 6px #000;
+    font-weight: 500;
+}
+
+.arrow {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.arrow i {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    transition: transform 0.3s;
+}
+
+.arrow:hover i {
+    position: absolute;
+    top: 0;
+    transform: translateX(3px);
+}
+
+.title {
+    position: relative;
+    margin-top: 150px;
+}
+
+.title h1,
+.title h2,
+.title p {
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.title button {
+    opacity: .6;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 2px solid;
+}
+
+.portfolioBtn {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+}
+
+.title p b {
+    color: rgb(89 89 89 / 74%);
+}
+
+img.profilePhoto {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    width: 650px;
+    z-index: -1;
+}
+
+main {
+    margin-top: 132px;
+}
+
+footer {
+    position: relative;
+    background-image: url('../img/main/img_v2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 9px;
+    color:rgba(107, 107, 107, 0.753);
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+footer a {
+    padding: 10px;
+}
+
+.tel button{
+    padding: 6px 73px;
+    opacity: .6;
+    font-weight: 500;
+    border: 2px solid;
+    margin: 10px;
+}
+
+.mail button {
+    opacity: .6;
+    font-weight: 500;
+    border: 2px solid;
+    margin: 10px;
+}
+
+.contact {
+    margin: 30px 0 60px 0;
+}
+
+.footerName {
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+.copy {
+    padding-top: 9px;
+    border-top: 1px solid rgba(107, 107, 107, 0.175);
+    width: 300px;
+    margin: 9px auto;
+}
+
+/* bootstrap corrections */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(95, 137, 236, 0.74);
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+/* bootstrap corrections - end */
+
+/* 404 - start */
+
+#error {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.errorText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.errorText h1 {
+    font-size: 9rem;
+}
+
+#error button {
+    display: block;
+    margin: 30px auto;
+    opacity: .6;
+    font-weight: 500;
+}
+
+.errorText img {
+    margin: 0 9px;
+    margin-bottom: 30px;
+}
+
+.errorText .smallErr {
+    font-size: 6rem;
+}
+
+.smallErr img {
+    width: 79px;
+}
+
+/* 404 - end */
+
+/* image-compare corrections - start */
+
+.images-compare-container {
+    box-shadow: 0 0 9px rgba(88, 88, 88, 0.5);
+}
+
+.images-compare-before .images-compare-label,
+.images-compare-after .images-compare-label {
+    font-variant-caps: all-small-caps;
+}
+
+.images-compare-label {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    opacity: .8;
+    padding: 3px 20px;
+}
+/* image-compare corrections - start */
+
+/* Main about - start */
+
+#aboutMain img {
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+}
+
+img.photoshop {
+    display: block;
+    width: 30%;
+    float: left;
+    margin-right: 9px;
+    margin-top: 9px;
+}
+
+img.blender {
+    display: block;
+    width: 30%;
+    float: right;
+    margin-left: 9px;
+    margin-top: 9px;
+}
+
+.companies {
+    display: flex;
+}
+
+.companies img {
+    width: 30%;
+    height: 20%;
+    margin-right: 9px;
+}
+
+.companies li,
+.companies h6 {
+    margin-bottom: 20px;
+    list-style-type: circle;
+}
+
+.companies li::marker {
+    color: rgba(95, 137, 236, 0.74);
+}
+/* Main about - end */
+
+
+/* Main portfolio - start */
+
+.marginCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.pagination {
+    opacity: .6;
+    box-shadow: 0 0 5px rgba(107, 107, 107, 0.468);
+    transition: .3;
+}
+
+.pagination .page-link {
+    width: 150px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.645);
+    font-size: medium;
+    font-weight: bold;
+    border: 1px solid rgba(107, 107, 107, 0.468);
+}
+
+/* Main portfolio - end */
+
+/* @media - start */
+
+@media only screen and (max-width: 767px) {
+    .navbar-dark .navbar-nav .nav-link.active {
+        font-size: 1.3rem;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .navbar-dark .navbar-toggler {
+        border: 3px solid rgb(135, 135, 135);
+        box-shadow: 0 0 6px rgb(148, 148, 148);
+        transition: .3s;
+        padding: 0px 14px;
+        padding-top: 2px;
+    }
+    .navbar-dark .navbar-toggler:active,
+    .navbar-dark .navbar-toggler:hover {
+        border: 3px solid rgba(95, 137, 236, 0.74);
+        box-shadow: 0 0 2px rgba(95, 137, 236, 0.74);
+        color: rgba(95, 137, 236, 0.74);
+        background-color: rgb(32, 32, 32);
+        transform: scale(98%);
+    }
+    
+    .title {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
+
+/* animation CV circle - start */
+.cvLink {
+    position: relative;
+
+}
+.cvLink::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border: 3px solid rgba(95, 137, 236, 0.74);
+    border-radius: 50%;
+    top: 7px;
+    left: 1px;
+    z-index: -1;
+	-webkit-animation: scale-in-center 6s 3s infinite both;
+	        animation: scale-in-center 6s 3s infinite both;
+
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-12-30 17:17:55
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-center {
+0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+}
+25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+}
+50% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    }
+    75% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+    }
+}
+@keyframes scale-in-center {
+0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    }
+    25% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    }
+    50% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+    75% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* animation CV circle - start */
