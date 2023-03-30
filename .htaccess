@@ -3,4 +3,4 @@
 Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
-ErrorDocument 404 /404error.html
+ErrorDocument 404 /error.html
